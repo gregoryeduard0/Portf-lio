@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+header .flex {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .cabecalho h1 {
+    font-size: 28px;
+    color: #008080;
+}
+
+
+header .cabecalho h1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #008B8B;
+    margin: 0 auto;
+    transition: width 0.5s;
+}
+
+header .cabecalho h1:hover::after {
+    width: 80%;
+}
+
+header .cabecalho i {
+    color: #008B8B;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+header .menu nav ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+header .menu li {
+    font-size: 18px;
+    color: #008B8B;
+}
+
+
+header .menu a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header .menu nav ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #008B8B;
+    margin: 0 auto;
+    transition: width 0.5s;
+}
+
+header .menu nav ul li:hover::after {
+    width: 100%;
+}
+
+
+
+main .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .conteudo .titulo {
+    padding: 90px 10%;
+
+}
+
+main .conteudo .titulo h3 {
+    color: #000;
+    font-size: 26px;
+}
+
+main .conteudo .titulo h2 {
+    font-size: 33px;
+    color: #008080;
+}
+
+#eu {
+    color: #014444;
+}
+
+
+main .conteudo .titulo .txt p {
+    padding: 20px 0;
+    color: #000;
+}
+
+main .conteudo .titulo .txt {
+    width: 500px;
+    text-align: justify;
+}
+
+main .conteudo .imagem {
+    margin-right: 180px;
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .conteudo .imagem img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #008080;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+main .conteudo .imagem img:hover {
+    box-shadow: 0 0 50px #07b3b3;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 60px;
+    }
+}
+
+main .sobre-mim .container {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .sobre-mim .container .txt-sobre p {
+    padding: 50px 0;
+    color: #000;
+    text-align: justify;
+}
+
+main .sobre-mim .container .txt-sobre h2 {
+    font-size: 30px;
+    color: #008080;
+}
+
+main .sobre-mim .container .img-sobre img {
+    height: 250px;
+    width: 700px;
+}
+
+.button i {
+    padding: 0 5px;
+    font-size: 32px;
+    color: #001f1f;
+}
+
+.button i:hover {
+    color: #014444;
+    cursor: pointer;
+}
+
+footer {
+    padding: 0 30px;
+    background: #c3ffff;
+    color: #07b3b3;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #8ad4d4;
+}
+
+footer .footer {
+    padding: 0px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: unset;
+}
+
+
+
+
+footer .footer .icones i {
+    font-size: 28px;
+    padding: 20px 7px;
+    color: #014444;
+    cursor: pointer;
+}
+
+footer .footer .icones i:hover{
+    color: #008080;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+
+}
+
+
+.card-footer .card-gmail,
+.card-contato {
+    box-shadow: 10px 10px 0px #008080;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    border-style: solid;
+    background: #014444;
+    border-color: #00808052;
+}
+
+.card-footer .card-gmail,
+.card-contato a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.card-footer .card-gmail a {
+    text-decoration: none;
+    font-size: 12px;
+    color: antiquewhite;
+
+}
+
+.card-footer .card-gmail i{
+    font-size: 27px;
+}
+
+.card-footer .card-contato a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.card-footer .card-contato i{
+    font-size: 27px;
+}
+
+
+.card-footer .card-gmail a:hover{
+    color: #aedfdf;
+    cursor: pointer;
+}
+
+.card-footer .card-contato a:hover{
+    color: #aedfdf;
+    cursor: pointer;
+}
+
+.card-footer .card-contato h2{
+    color: #8ad4d4;
+    padding: 10px 0;
+}
+
+.card-footer .card-gmail h2{
+    color: #8ad4d4;
+    padding: 10px 0;
+}
+
+.texto-footer h2{
+    color: #014444;
+}
+
+footer h2{
+    font-size: 14px;
+    color: #014444;
+    text-align: center;
+}
